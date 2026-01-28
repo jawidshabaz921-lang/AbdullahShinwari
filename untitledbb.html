@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movro - Fashion for Everyone</title>
+    <style>
+        body { font-family: 'Open Sans', sans-serif; margin: 0; padding: 0; background: #f8f8f8; }
+        header { background: #fff; padding: 1rem; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav { display: flex; gap: 1rem; }
+        nav a { text-decoration: none; color: #333; font-weight: bold; }
+        .hero { background: url('hero-image.jpg') center/cover; height: 60vh; display: flex; align-items: center; justify-content: center; color: #fff; text-align: center; }
+        .hero h1 { font-size: 3rem; margin: 0; }
+        .categories { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; padding: 2rem; }
+        .category { background: #fff; padding: 1rem; text-align: center; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .category img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+        footer { background: #333; color: #fff; text-align: center; padding: 1rem; }
+        @media (max-width: 768px) { .hero h1 { font-size: 2rem; } nav { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Movro</div>
+        <nav>
+            <a href="#women">Women</a>
+            <a href="#men">Men</a>
+            <a href="#children">Children</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <input type="text" placeholder="Search...">
+    </header>
+    
+    <section class="hero">
+        <div>
+            <h1>Design & Fashion for Every Style</h1>
+            <p>Discover Movro's latest collections.</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+    
+    <section class="categories">
+        <div class="category" id="women">
+            <img src="women-collection.jpg" alt="Women's Fashion">
+            <h2>Women</h2>
+            <p>Elegant dresses, tops, and accessories.</p>
+            <a href="#">Explore</a>
+        </div>
+        <div class="category" id="men">
+            <img src="men-collection.jpg" alt="Men's Fashion">
+            <h2>Men</h2>
+            <p>Stylish shirts, pants, and outerwear.</p>
+            <a href="#">Explore</a>
+        </div>
+        <div class="category" id="children">
+            <img src="kids-collection.jpg" alt="Children's Fashion">
+            <h2>Children</h2>
+            <p>Fun, comfortable clothing for kids.</p>
+            <a href="#">Explore</a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Movro. Follow us on social media.</p>
+    </footer>
+    
+    <script>
+        // Simple JS for interactivity, e.g., alert on button click
+        document.querySelector('button').addEventListener('click', () => alert('Redirecting to shop!'));
+    </script>
+</body>
+</html>
